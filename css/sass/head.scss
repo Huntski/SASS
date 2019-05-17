@@ -1,0 +1,28 @@
+/*
+*   author: Wiebe Ranzijn
+*/
+
+/* global variables */
+
+$a: absolute;
+$font: "Myriad Pro";
+$font_src: url("../MyriadPro-Regular.otf");
+
+/* -------------- global css -------------- */
+
+@font-face {
+    font-family: font;
+    src: $font_src;
+}
+
+$fonts_to_use: $font, arial, helvetica, sans-serif;
+
+html,
+body {
+    margin: 0;
+    font-family: $fonts_to_use;
+}
+
+button {
+    cursor: pointer;
+}

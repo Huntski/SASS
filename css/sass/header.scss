@@ -1,0 +1,88 @@
+/* global variables */
+
+$a: absolute;
+$font: "Myriad Pro";
+$font-src: url(../MyriadPro-Regular.otf);
+
+/* -------------- header -------------- */
+
+header {
+    width: 100%;
+
+    * {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 10px 0;
+    }
+
+    img:nth-child(1) {
+        position: relative;
+        left: 140px;
+        height: 45px;
+    }
+}
+
+.header-nav {
+    position: $a;
+    top: 10px;
+    right: 140px;
+
+    select {
+        color: #0073cf;
+        border: none;
+        /* width: 150px; */
+        padding: 6px 35px 5px 5px;
+        font-size: 16px;
+        border: none;
+        height: 34px;
+        -webkit-appearance: none;
+        background: url("../img/arrow_down.png") 94% / 15% no-repeat;
+        background-size: 10px;
+        text-transform: capitalize;
+    }
+
+    img {
+        width: 15px;
+    }
+}
+
+.header-info {
+    position: $a;
+    top: 110px;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 3px;
+    width: 500px;
+    color: #fff;
+
+    img {
+        position: $a;
+        top: 0;
+        right: -640px;
+    }
+
+    button {
+        position: $a;
+        right: 34px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.7em;
+        color: #fff;
+        background: #0073cf;
+        padding: 15px 25px;
+        border: solid 2px #fff;
+        border-radius: 6px;
+    }
+}
+
+.header-info-bg {
+    /* top: 10px; */
+    height: 360px;
+    width: 100%;
+    background: url("../img/bg_header.png") no-repeat;
+    background-position-y: -80px;
+    background-size: 100%;
+    filter: grayscale(100%) brightness(70%);
+}
